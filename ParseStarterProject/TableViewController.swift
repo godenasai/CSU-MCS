@@ -23,10 +23,6 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
     let placeholderImage : UIImage = UIImage(named:"placeholder-hi.png")!
     var profilePictures = [String:UIImage]()
     
-    
-    
-    
-    
     let followingImage: UIImage = UIImage(named: "following_big.png")!
     let followImage: UIImage = UIImage(named: "follow_big.png")!
     let studentType: UIImage = UIImage(named: "student_blue.png")!
