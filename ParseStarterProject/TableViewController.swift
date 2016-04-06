@@ -32,6 +32,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
     var refresher: UIRefreshControl!
     
     
+    
     var selectedObjectId:String = ""
     
     var swipedObjectId:String = ""
