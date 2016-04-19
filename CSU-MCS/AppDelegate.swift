@@ -32,14 +32,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let parseConfiguration = ParseClientConfiguration { (ParseMutableClientConfiguration) -> Void in
             
             ParseMutableClientConfiguration.applicationId = "9rFwfdoSljWtZ0XbEpDxk9W3JNczOKGB1W03Ay44"
-            ParseMutableClientConfiguration.clientKey = "bOrvQk7ZaR2mzqRKFzL3NjmoobiuH3z4JEmPYIrM"
+            ParseMutableClientConfiguration.clientKey = "7nIzctTO2WGc2Ps3SxBHOoIg7dg6s3EcVd1TFymZ"
             ParseMutableClientConfiguration.server = "https://csumcs.herokuapp.com/parse"
         }
         
         Parse.initializeWithConfiguration(parseConfiguration)
         
-        Parse.setApplicationId("9rFwfdoSljWtZ0XbEpDxk9W3JNczOKGB1W03Ay44",
-            clientKey: "bOrvQk7ZaR2mzqRKFzL3NjmoobiuH3z4JEmPYIrM")
+//        Parse.setApplicationId("9rFwfdoSljWtZ0XbEpDxk9W3JNczOKGB1W03Ay44",
+//            clientKey: "bOrvQk7ZaR2mzqRKFzL3NjmoobiuH3z4JEmPYIrM")
 
         //PFUser.enableAutomaticUser()
 
@@ -47,6 +47,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // If you would like all objects to be private by default, remove this line.
         defaultACL.publicReadAccess = true
+        //defaultACL.publicWriteAccess = true
+        
+    
 
         PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser:true)
 
@@ -66,17 +69,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        if application.respondsToSelector("registerUserNotificationSettings:") {
-            let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
-            
-            
-           
-            application.registerUserNotificationSettings(settings)
-            application.registerForRemoteNotifications()
-        } else {
-            let types: UIRemoteNotificationType = [UIRemoteNotificationType.Badge, UIRemoteNotificationType.Alert, UIRemoteNotificationType.Sound]
-            application.registerForRemoteNotificationTypes(types)
-        }
+//        if application.respondsToSelector("registerUserNotificationSettings:") {
+//            let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+//            
+//            
+//           
+//            application.registerUserNotificationSettings(settings)
+//            application.registerForRemoteNotifications()
+//        } else {
+//            let types: UIRemoteNotificationType = [UIRemoteNotificationType.Badge, UIRemoteNotificationType.Alert, UIRemoteNotificationType.Sound]
+//            application.registerForRemoteNotificationTypes(types)
+//        }
     
         return true
     }

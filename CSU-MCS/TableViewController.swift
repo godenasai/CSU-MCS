@@ -139,14 +139,6 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         
         
     }
-    
-    
-    
-    func swipeRight(recognizer:UISwipeGestureRecognizer) {
-        
-        
-        self.performSegueWithIdentifier("feeds", sender: self)
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -167,7 +159,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         self.tableView.addSubview(refresher)
         
         refresh()
-        self.tableView.reloadData()
+       // self.tableView.reloadData()
     
     }
 

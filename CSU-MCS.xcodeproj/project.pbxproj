@@ -227,31 +227,9 @@
 			path = "CSU-MCSTests";
 			sourceTree = "<group>";
 		};
-		81BA813C1A49DA1800E65899 = {
+		73CA4A9A1CC6BF3B00A6C4FD /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				81BA81471A49DA1800E65899 /* CSU-MCS */,
-				73090B7D1CB5AEDB009B134F /* CSU-MCSUITests */,
-				73090B8B1CB5AEF9009B134F /* CSU-MCSTests */,
-				81BA816A1A49DB5600E65899 /* Frameworks */,
-				81BA81461A49DA1800E65899 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		81BA81461A49DA1800E65899 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				81BA81451A49DA1800E65899 /* CSU-MCS.app */,
-				73090B7C1CB5AEDB009B134F /* CSU-MCSUITests.xctest */,
-				73090B8A1CB5AEF9009B134F /* CSU-MCSTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		81BA81471A49DA1800E65899 /* CSU-MCS */ = {
-			isa = PBXGroup;
-			children = (
-				732989421CAF514600116FF5 /* UIView+Designable.swift */,
 				7310B51A1CAB0AF400BB0453 /* follow_big.png */,
 				7310B51B1CAB0AF400BB0453 /* following_big.png */,
 				732D6BF01CABA98C00F250BA /* feeds_3x.png */,
@@ -287,10 +265,40 @@
 				733236571C9B917A00A43AC8 /* following-icon.png */,
 				733236551C9B908000A43AC8 /* follow-icon.png */,
 				738F56631CB040D500CEB4AD /* Profile-icon-1x.png */,
-				733236511C9B88CF00A43AC8 /* UserCell.swift */,
 				735CA9E81C990A0900FD55F3 /* placeholder-hi.png */,
 				732DF6611C924879000EEF53 /* background.png */,
 				732DF65F1C9247A5000EEF53 /* Landing Screen.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		81BA813C1A49DA1800E65899 = {
+			isa = PBXGroup;
+			children = (
+				81BA81471A49DA1800E65899 /* CSU-MCS */,
+				73090B7D1CB5AEDB009B134F /* CSU-MCSUITests */,
+				73090B8B1CB5AEF9009B134F /* CSU-MCSTests */,
+				81BA816A1A49DB5600E65899 /* Frameworks */,
+				81BA81461A49DA1800E65899 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81BA81461A49DA1800E65899 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81BA81451A49DA1800E65899 /* CSU-MCS.app */,
+				73090B7C1CB5AEDB009B134F /* CSU-MCSUITests.xctest */,
+				73090B8A1CB5AEF9009B134F /* CSU-MCSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81BA81471A49DA1800E65899 /* CSU-MCS */ = {
+			isa = PBXGroup;
+			children = (
+				73CA4A9A1CC6BF3B00A6C4FD /* Icons */,
+				733236511C9B88CF00A43AC8 /* UserCell.swift */,
+				732989421CAF514600116FF5 /* UIView+Designable.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				7323AFE61C98B5E000F7C6FA /* SignUpViewController.swift */,

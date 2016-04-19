@@ -28,8 +28,6 @@ class ChatViewControllerTable: UIViewController, UITableViewDelegate, UITextView
     
     @IBAction func sendButtonTapped(sender: AnyObject) {
         
-       // self.messageTextView.endEditing(true)
-        
         let newMessage:PFObject = PFObject(className: "Products")
         
         newMessage["Message"] = self.messageTextView.text
@@ -100,6 +98,14 @@ class ChatViewControllerTable: UIViewController, UITableViewDelegate, UITextView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+       let newMessage:PFObject = PFObject(className: "Messages")
+        
+        newMessage["message"] = "testing"
+        
+        newMessage.saveInBackground()
+        
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         

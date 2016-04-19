@@ -42,7 +42,10 @@ class ProfileModalViewController: UIViewController, UINavigationControllerDelega
             
             userPicture.getDataInBackgroundWithBlock({ (data, error) -> Void in
                 
-                self.profilePicture.image = UIImage(data: data!)
+                if(error == nil) {
+                    self.profilePicture.image = UIImage(data: data!)
+                }
+                
             })
         }
         
